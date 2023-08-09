@@ -26,6 +26,15 @@ Secondly, we further analyze the "friend city" section on the web page of each c
 
 Finally, we build a city graph composed of city nodes and friendly relations.
 
+file contents:
+
+content_analyze.py basically parse the web content of each city to get mixed information of a city(txt file with contents from all the sections)
+super_ana.py       further analyze the mixed information, and split it into several files according to the number of sections
+fieldmatch.py      many cities contained sections with different names but have similar contents(both in-city and inter-city), this step aims at 
+                   recognizing the similarity and classifying these sections
+cons_dataset.py    get the embedding of each city (concatenate the embedding of different section classes) and parse the relationship between cities 
+                  mentioned in "friendly cities"
+
 
 ## Part 3 Mine latent city relationship
 
