@@ -40,5 +40,8 @@ cons_dataset.py    get the embedding of each city (concatenate the embedding of 
 
 we train a GNN model based on the graph built in Part 2 And use it to infer the latent friend-city relationship
 
+design two different learning models: simple pair learning model(two layers MLP) and GraphSage model
+
+
 
 
